@@ -28,7 +28,7 @@ function bmiCalculator(){
         riskLevel.innerText = "Risk level: " + "Moderate"
     }
 
-    else if (bmiResult >= 16 && bmiResult <= 18.04){
+    else if (bmiResult >= 16 && bmiResult <= 18.40){
         bmivalue.innerText = "BMI value: " + bmiResult
         category.innerText = "Category: Underweight"
         riskLevel.innerText = "Risk level: " + "Moderate"
