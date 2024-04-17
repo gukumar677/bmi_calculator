@@ -1,6 +1,10 @@
 
 let height = document.getElementById('height')
 let weight = document.getElementById('weight')
+let bmivalue = document.getElementById('bmiValue')
+let category = document.getElementById('category')
+let riskLevel = document.getElementById('riskLevel')
+let quote = document.getElementById('quote')
 
 function bmiCalculator(){    
     
@@ -9,11 +13,8 @@ function bmiCalculator(){
     // m square
     let bmiMeter = cmToMeter * cmToMeter
     // bmi formula
-    let bmiResult = (weight.value/bmiMeter).toFixed(2) 
-    let bmivalue = document.getElementById('bmiValue')
-    let category = document.getElementById('category')
-    let riskLevel = document.getElementById('riskLevel')
-    let quote = document.getElementById('quote')
+    let bmiResult = (weight.value/bmiMeter).toFixed(2)
+    
     quote.innerText = "Be Healthy & Wealthy "
 
     if (bmiResult <15){
@@ -67,4 +68,8 @@ function reset(){
     console.log("reset  called")
     height.value = ''
     weight.value = ''
+    bmivalue.innerText = ''
+    category.innerText = ''
+    riskLevel.innerText = ''
+    quote.innerText = ''
 }
